@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <dimen name="body_large">22ssp</dimen>
-    <dimen name="body_medium">18ssp</dimen>
-    <dimen name="body_small">14ssp</dimen>
+<!--    <dimen name="body_large">22ssp</dimen>-->
+<!--    <dimen name="body_medium">18ssp</dimen>-->
+<!--    <dimen name="body_small">14ssp</dimen>-->
 </resources>
