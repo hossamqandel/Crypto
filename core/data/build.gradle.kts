@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "dev.hossam.local"
+    namespace = "dev.hossam.data"
     compileSdk = 33
 
     defaultConfig {
@@ -43,12 +43,15 @@ dependencies {
     androidTestImplementation("androidx.test.ext:junit:1.1.5")
     androidTestImplementation("androidx.test.espresso:espresso-core:3.5.1")
 
-
     val room_version = "2.5.2"
     implementation("androidx.room:room-runtime:$room_version")
     // To use Kotlin Symbol Processing (KSP)
     ksp("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
 
-    implementation(project(":cryptocurrency:domain:model"))
+    //Gson Converter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
+    api(project(":cryptocurrencies:data:local"))
+    api(project(":cryptocurrency:data:local"))
 }

@@ -67,4 +67,15 @@ dependencies {
     implementation("com.google.dagger:hilt-android:2.47")
     ksp("com.google.dagger:hilt-android-compiler:2.47")
 
+    //Room Database
+    val room_version = "2.5.2"
+    implementation("androidx.room:room-runtime:$room_version")
+    // To use Kotlin Symbol Processing (KSP)
+    ksp("androidx.room:room-compiler:$room_version")
+    implementation("androidx.room:room-ktx:$room_version")
+
+
+    implementation(project(":core:data"))
+
+
 }
