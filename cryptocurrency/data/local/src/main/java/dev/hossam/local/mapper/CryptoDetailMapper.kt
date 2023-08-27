@@ -13,7 +13,7 @@ internal fun CryptoDetail.toCryptoDetailEntity(): CryptoDetailEntity {
         description,
         name,
         symbol,
-        is_active,
+        isActive,
         team.map { TeamMember(it.id, it.name, it.position) },
         tags.map { Tag(it.id, it.name) }
     )
@@ -25,7 +25,7 @@ internal fun CryptoDetailEntity.toCryptoDetailDTO(): CryptoDetailDTO {
         id = id,
         description = description,
         cryptoName = cryptoName,
-        symbol = "($symbol)",
+        symbol = symbol,
         isActive = isActive,
         tags = tags,
         teamMembers = teamMembers

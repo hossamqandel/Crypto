@@ -74,6 +74,11 @@ dependencies {
     ksp("androidx.room:room-compiler:$room_version")
     implementation("androidx.room:room-ktx:$room_version")
 
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    //Gson Converter
+    implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+
 
     implementation(project(":core:data"))
 

@@ -51,7 +51,13 @@ dependencies {
 
     //Gson Converter
     implementation("com.squareup.retrofit2:converter-gson:2.9.0")
+    //Retrofit
+    implementation("com.squareup.retrofit2:retrofit:2.9.0")
+    implementation("com.squareup.retrofit2:converter-guava:2.9.0")
 
+    api(project(":core:constant"))
     api(project(":cryptocurrencies:data:local"))
     api(project(":cryptocurrency:data:local"))
+    api(project(":cryptocurrencies:domain:model"))
+    api(project(":cryptocurrency:domain:model"))
 }
